@@ -2,17 +2,18 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.cryptomator</groupId>
 	<artifactId>cli</artifactId>
-	<version>0.6.0-SNAPSHOT</version>
+	<version>0.6.0.2.6.9-SNAPSHOT</version>
 	<name>Cryptomator CLI</name>
 	<description>Command line program to access encrypted files via WebDAV.</description>
 	<url>https://github.com/cryptomator/cli</url>
 
 	<properties>
-		<cryptofs.version>2.6.5</cryptofs.version>
-		<webdav-nio.version>2.0.3</webdav-nio.version>
-		<commons.cli.version>1.5.0</commons.cli.version>
-		<logback.version>1.2.13</logback.version>
-		<fuse-nio.version>1.3.3</fuse-nio.version>
+		<cryptofs.version>2.6.9</cryptofs.version>
+		<webdav-nio.version>2.0.6</webdav-nio.version>
+		<commons.cli.version>1.8.0</commons.cli.version>
+		<logback.version>1.5.6</logback.version>
+		<fuse-nio.version>1.3.4</fuse-nio.version>
+		<jansi.version>2.4.1</jansi.version>
 
 		<java.version>17</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -71,6 +72,12 @@
 			<artifactId>logback-classic</artifactId>
 			<version>${logback.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.fusesource.jansi</groupId>
+			<artifactId>jansi</artifactId>
+			<version>${jansi.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
